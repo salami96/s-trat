@@ -1,0 +1,8 @@
+{
+    "require": {
+      "slim/slim": "^3.9",
+      "slim/php-view": "^2.2",
+      "mailjet/mailjet-apiv3-php": "^1.4",
+        "nexmo/client": "^1.6"
+    }
+}

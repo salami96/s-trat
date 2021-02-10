@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Registre seu paciente no S-trat</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../templates/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../templates/css/form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="../templates/heart-pulse.png" alt="" width="72" height="72">
+        <h2>Informe os dados</h2>
+        <p class="lead">Preencha esta ficha cadastral com no mínimo o endereço de email do seu paciente, para que ele receba o link para download do aplicativo S-trat: tratamentos de saúde. E termine de preencher seus próprios dados dentro do mesmo.</p>
+      </div>
+
+      <div class="row">
+        
+        <div class="col-md-6 offset-md-3 order-md-1">
+          <h4 class="mb-3">Cadastro de Pacientes</h4>
+          <form class="needs-validation" action="../pacientes/" method="POST" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="">
+                <div class="invalid-feedback">
+                  É obrigatório preencher o campo nome.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="">
+                <div class="invalid-feedback">
+                  É obrigatório preencher o campo sobrenome.
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="telefone">Telefone</label>
+              <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000" maxlength="12">
+              <div class="invalid-feedback">
+                Por favor, informe um telefone válido para o seu cadastro.
+              </div>
+            </div>            
+            <div class="mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="voce@exemplo.com" required>
+              <div class="invalid-feedback">
+                Por favor, informe um email válido para o seu cadastro.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="senha">Senha</label>
+              <input type="password" class="form-control" id="senha" name="senha" placeholder="********">
+              <div class="invalid-feedback">
+                Por favor, informe uma senha válida para o seu cadastro.
+              </div>
+            </div>
+            <div class="text-center">
+            <button class="btn btn-outline-primary btn-lg" type="submit">Enviar</button>
+            <button class="btn btn-outline-secondary btn-lg" type="reset">Limpar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mt-5 mb-3 text-muted">S-trat: Tratamentos de Saúde<br> &copy; 2017-2018</p>
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../templates/js/jquery-slim.min.js"><\/script>')</script>
+    <script src="../templates/js/popper.min.js"></script>
+    <script src="../templates/js/bootstrap.min.js"></script>
+    <script src="../templates/js/holder.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>

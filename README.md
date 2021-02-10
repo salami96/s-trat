@@ -1,6 +1,6 @@
 # S-trat
 
-Reupload do S-trat: Traramentos de saúde, em sua versão pública.
+Reupload do S-trat: Tratamentos de saúde, em sua versão pública.
 
 Descrição
 Trata-se de um sistema para acompanhamento de tratamentos de saúde, com lançamento de receitas pelo profissional de saúde e lembrete de medicamentos e procedimentos relativos ao tratamento.
